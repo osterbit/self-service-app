@@ -1,0 +1,10 @@
+django
+djangorestframework
+django-jsonform
+django-ace
+jsonschema
+pydantic
+django-json-widget
+django-admin-interface
+django-admin-material
+django-material

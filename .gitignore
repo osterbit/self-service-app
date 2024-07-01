@@ -170,6 +170,8 @@ db.sqlite3
 
 # Collected static files
 staticfiles/*
+svc_proj/staticfiles/*
+
 
 # But not the custom theme sources
 !staticfiles/css/themes/

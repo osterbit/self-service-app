@@ -1,0 +1,67 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Reinstall requirements.txt",
+            "type": "shell",
+            "command": "pip install -r requirements.txt",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder:Repo Root}"
+            }
+        },
+      {
+        "label": "Run Django Server",
+        "type": "shell",
+        "command": "python manage.py runserver",
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "problemMatcher": [],
+        "options": {
+          "cwd": "${workspaceFolder:Project Context}"
+        }
+      },
+      {
+        "label": "Make Migrations",
+        "type": "shell",
+        "command": "python manage.py makemigrations",
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "problemMatcher": [],
+        "options": {
+         "cwd": "${workspaceFolder:Project Context}"
+        }
+      },
+      {
+        "label": "Migrate",
+        "type": "shell",
+        "command": "python manage.py migrate",
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "problemMatcher": [],
+        "options": {
+          "cwd": "${workspaceFolder:Project Context}"
+        }
+      }
+    ]
+  }

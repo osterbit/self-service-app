@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "Repo Root",
+      "path": ".",
+      
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder:Repo Root}/.venv/bin/python",
+  }
+    },
+    {
+      "name": "Project Context",
+      "path": "svc_proj",
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder:Repo Root}/.venv/bin/python",
+      }
+
+    }
+  ]
+}
